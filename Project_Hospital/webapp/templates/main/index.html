@@ -37,11 +37,15 @@
 
   <!--
     - preload images
-  -->
+
 
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
   <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+-->
 
+{% load static %}
+<link rel="preload" as="image" href="{% static 'main/images/hero-banner.png' %}">
+<link rel="preload" as="image" href="{% static 'main/images/hero-bg.png' %}">
 </head>
 
 <body id="top">
