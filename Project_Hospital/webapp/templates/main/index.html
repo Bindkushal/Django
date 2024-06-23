@@ -31,7 +31,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="style.css">
-  {% load static %}  
+  {% load static %}
   <link rel="stylesheet" href="{% static 'main/style.css' %}">
 
 
@@ -876,7 +876,10 @@
 
 
   -->
-  <script src="{% static 'js/script.js' %}" defer></script>
+  <script src="{% static 'main/script.js' %}" defer></script>
+
+  {% load static %}
+<script src="{% static 'main/script.js' %}"></script>
 
   <script src="script.js"></script>
 
